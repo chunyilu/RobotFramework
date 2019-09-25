@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190521 15:58:41.161" generator="Robot 3.1 (Python 2.7.15 on win32)">
+<suite source="G:\git_Chunyi\Robotframework\d2d_test_prod" id="s1" name="D2D Test Prod">
+<suite source="G:\git_Chunyi\Robotframework\d2d_test_prod\test_cases" id="s1-s1" name="Test Cases">
+<suite source="G:\git_Chunyi\Robotframework\d2d_test_prod\test_cases\smoke_test" id="s1-s1-s1" name="Smoke Test">
+<suite source="G:\git_Chunyi\Robotframework\d2d_test_prod\test_cases\smoke_test\PayPal_UI.robot" id="s1-s1-s1-s1" name="PayPal UI">
+<test id="s1-s1-s1-s1-t1" name="Check PayPal UI">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>open browser</arg>
+</arguments>
+<status status="PASS" endtime="20190521 15:58:41.432" starttime="20190521 15:58:41.432"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${d2d_url}</arg>
+<arg>ff</arg>
+</arguments>
+<msg timestamp="20190521 15:58:41.433" level="INFO">Opening browser 'ff' to base url 'https://www.direct2drive.com'.</msg>
+<status status="PASS" endtime="20190521 15:58:54.099" starttime="20190521 15:58:41.433"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190521 15:58:54.361" starttime="20190521 15:58:54.100"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5 seconds</arg>
+</arguments>
+<status status="PASS" endtime="20190521 15:58:54.364" starttime="20190521 15:58:54.362"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20190521 15:58:57.365" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20190521 15:58:57.365" starttime="20190521 15:58:54.365"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>put the product to shopping cart</arg>
+</arguments>
+<status status="PASS" endtime="20190521 15:58:57.365" starttime="20190521 15:58:57.365"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${item_url}</arg>
+</arguments>
+<msg timestamp="20190521 15:58:57.366" level="INFO">Opening url 'https://www.direct2drive.com/#!/download-mortal-kombat-11/5014060'</msg>
+<status status="PASS" endtime="20190521 15:58:57.380" starttime="20190521 15:58:57.365"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20190521 15:59:00.382" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20190521 15:59:00.382" starttime="20190521 15:58:57.380"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//div[@class="pull-right"]/div[1]/div/div/div[2]/button</arg>
+</arguments>
+<msg timestamp="20190521 15:59:00.383" level="INFO">Clicking element '//div[@class="pull-right"]/div[1]/div/div/div[2]/button'.</msg>
+<status status="PASS" endtime="20190521 15:59:00.614" starttime="20190521 15:59:00.382"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20190521 15:59:01.614" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20190521 15:59:01.614" starttime="20190521 15:59:00.614"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>https://www.direct2drive.com/#!/cart</arg>
+</arguments>
+<msg timestamp="20190521 15:59:01.615" level="INFO">Opening url 'https://www.direct2drive.com/#!/cart'</msg>
+<status status="PASS" endtime="20190521 15:59:01.624" starttime="20190521 15:59:01.614"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20190521 15:59:04.626" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20190521 15:59:04.626" starttime="20190521 15:59:01.625"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>check shopping cart elements</arg>
+</arguments>
+<status status="PASS" endtime="20190521 15:59:04.627" starttime="20190521 15:59:04.626"></status>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>${my_shopping_cart_h3}</arg>
+<arg>My Shopping Cart</arg>
+</arguments>
+<msg timestamp="20190521 15:59:04.643" level="INFO">Element '//div[@class="cart-header"]/h3' contains text 'My Shopping Cart'.</msg>
+<status status="PASS" endtime="20190521 15:59:04.643" starttime="20190521 15:59:04.627"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${cart_icon}</arg>
+</arguments>
+<msg timestamp="20190521 15:59:04.647" level="INFO">Current page contains element '//div[@class="cart-header"]/h3/i'.</msg>
+<status status="PASS" endtime="20190521 15:59:04.648" starttime="20190521 15:59:04.643"></status>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>${item_title_element}</arg>
+<arg>Mortal Kombat 11</arg>
+</arguments>
+<msg timestamp="20190521 15:59:04.658" level="INFO">Element '//*[@id="cart-view-content"]/div[3]/div[1]/div[1]/div[2]' contains text 'Mortal Kombat 11'.</msg>
+<status status="PASS" endtime="20190521 15:59:04.658" starttime="20190521 15:59:04.648"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>click checkout button</arg>
+</arguments>
+<status status="PASS" endtime="20190521 15:59:04.659" starttime="20190521 15:59:04.659"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${checkout_btn}</arg>
+</arguments>
+<msg timestamp="20190521 15:59:04.660" level="INFO">Clicking element '//div[@id="paypal-button"]'.</msg>
+<status status="PASS" endtime="20190521 15:59:05.372" starttime="20190521 15:59:04.659"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>6s</arg>
+</arguments>
+<msg timestamp="20190521 15:59:11.373" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" endtime="20190521 15:59:11.373" starttime="20190521 15:59:05.373"></status>
+</kw>
+<kw name="Get Window Titles" library="SeleniumLibrary">
+<doc>Returns and logs titles of all known browser windows.</doc>
+<assign>
+<var>${TITLE_NAME}</var>
+</assign>
+<msg timestamp="20190521 15:59:11.390" level="INFO">Altogether 1 item.
+1: Cart - Direct2Drive</msg>
+<msg timestamp="20190521 15:59:11.390" level="INFO">${TITLE_NAME} = [u'Cart - Direct2Drive']</msg>
+<status status="PASS" endtime="20190521 15:59:11.390" starttime="20190521 15:59:11.374"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>enter login credential</arg>
+</arguments>
+<status status="PASS" endtime="20190521 15:59:11.391" starttime="20190521 15:59:11.390"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email_input}</arg>
+<arg>luchunyi80@gmail.com</arg>
+</arguments>
+<msg timestamp="20190521 15:59:11.392" level="INFO">Typing text 'luchunyi80@gmail.com' into text field 'xpath=//input[@id='loginEmail']'.</msg>
+<status status="PASS" endtime="20190521 15:59:11.438" starttime="20190521 15:59:11.391"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${pwd_input}</arg>
+<arg>qwer1234</arg>
+</arguments>
+<msg timestamp="20190521 15:59:11.439" level="INFO">Typing text 'qwer1234' into text field 'xpath=//input[@id='loginPassword']'.</msg>
+<status status="PASS" endtime="20190521 15:59:11.468" starttime="20190521 15:59:11.439"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${login_btn}</arg>
+</arguments>
+<msg timestamp="20190521 15:59:11.468" level="INFO">Clicking element '//*[@id="login"]/div[2]/form[1]//button'.</msg>
+<status status="PASS" endtime="20190521 15:59:11.723" starttime="20190521 15:59:11.468"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20190521 15:59:14.723" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20190521 15:59:14.723" starttime="20190521 15:59:11.723"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>click checkout button</arg>
+</arguments>
+<status status="PASS" endtime="20190521 15:59:14.724" starttime="20190521 15:59:14.723"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${checkout_btn}</arg>
+</arguments>
+<msg timestamp="20190521 15:59:14.725" level="INFO">Clicking element '//div[@id="paypal-button"]'.</msg>
+<status status="PASS" endtime="20190521 15:59:15.435" starttime="20190521 15:59:14.724"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>6s</arg>
+</arguments>
+<msg timestamp="20190521 15:59:21.436" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" endtime="20190521 15:59:21.436" starttime="20190521 15:59:15.435"></status>
+</kw>
+<kw name="Get Window Titles" library="SeleniumLibrary">
+<doc>Returns and logs titles of all known browser windows.</doc>
+<assign>
+<var>${TITLE_NAME}</var>
+</assign>
+<msg timestamp="20190521 15:59:21.561" level="INFO">Altogether 2 items.
+1: Cart - Direct2Drive
+2: PayPal Checkout</msg>
+<msg timestamp="20190521 15:59:21.562" level="INFO">${TITLE_NAME} = [u'Cart - Direct2Drive', u'PayPal Checkout']</msg>
+<status status="PASS" endtime="20190521 15:59:21.562" starttime="20190521 15:59:21.436"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190521 15:59:22.503" starttime="20190521 15:59:21.562"></status>
+</kw>
+<tags>
+<tag>paypal</tag>
+</tags>
+<status status="PASS" endtime="20190521 15:59:22.504" critical="yes" starttime="20190521 15:58:41.431"></status>
+</test>
+<status status="PASS" endtime="20190521 15:59:22.504" starttime="20190521 15:58:41.213"></status>
+</suite>
+<status status="PASS" endtime="20190521 15:59:22.506" starttime="20190521 15:58:41.211"></status>
+</suite>
+<status status="PASS" endtime="20190521 15:59:22.507" starttime="20190521 15:58:41.210"></status>
+</suite>
+<status status="PASS" endtime="20190521 15:59:22.508" starttime="20190521 15:58:41.194"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">paypal</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="D2D Test Prod" pass="1">D2D Test Prod</stat>
+<stat fail="0" id="s1-s1" name="Test Cases" pass="1">D2D Test Prod.Test Cases</stat>
+<stat fail="0" id="s1-s1-s1" name="Smoke Test" pass="1">D2D Test Prod.Test Cases.Smoke Test</stat>
+<stat fail="0" id="s1-s1-s1-s1" name="PayPal UI" pass="1">D2D Test Prod.Test Cases.Smoke Test.PayPal UI</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
