@@ -4,7 +4,7 @@ Documentation    Suite description
 Library  AppiumLibrary
 Library  RequestsLibrary
 Library  String
-
+a
 *** Variable ***
 ${div_top}  //html/body/d2d-root/mat-sidenav-container/mat-sidenav-content/div/div
 ${D2D_icon}  ${div_top}/a/img
